@@ -14,7 +14,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
         console.log("Content Chat: " + Wallet + "\n");
 
         const response = await axios.post(
-            'https://0x1b1c5071c56eafa190d6512dc96d4d26fcefc99a.us.gaianet.network/v1/chat/completions',
+            'https://0xb0fc730a9a332978573df428d30bb98c82736e9d.us.gaianet.network',
             {
                 'messages': [
                   {
