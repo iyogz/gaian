@@ -15,7 +15,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
             try {
                 const response = await axios.post(
-                    'https://0x662922c189d1e891b5a4ea45b214e7cf4b290665.us.gaianet.network/v1/chat/completions',
+                    'https://(NodeIdGaiaMu).us.gaianet.network/v1/chat/completions',
                     {
                         'messages': [
                             {
@@ -38,7 +38,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
                 console.log("Response: [" + response.data.choices[0].message.content + "]\n");
                 console.log("DONE MEK! \n\n");
-                await delay(200);
+                await delay(30000);
             } catch (postError) {
                 console.error("Error during axios post: ", postError);
             }
