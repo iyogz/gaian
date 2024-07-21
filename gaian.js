@@ -38,7 +38,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
                 console.log("Response: [" + response.data.choices[0].message.content + "]\n");
                 console.log("DONE MEK! \n\n");
-                await delay(60000);
+                await delay(200);
             } catch (postError) {
                 console.error("Error during axios post: ", postError);
             }
